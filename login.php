@@ -51,7 +51,7 @@ EOF;
 		$ret=$db->query($sql);
 		//
 		if($row=$ret->fetchArray(SQLITE3_ASSOC)){
-		if ($row['password']=$pw) {
+		if ($row['password']==$pw) {
 			header("location:home.html");
 			exit();
 		} else {
